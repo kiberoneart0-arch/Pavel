@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>С 8 Марта, Мамочка!</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Подключаем красивый шрифт -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Фон с падающими лепестками -->
+    <div id="petals-container"></div>
+
+    <div class="container">
+        <header>
+            <h1>С 8 Марта, любимая Мама! 🌷</h1>
+            <p class="subtitle">Ты — самый красивый цветок в нашей жизни!</p>
+        </header>
+
+        <!-- Блок с первой гифкой -->
+        <div class="card">
+            <div class="gif-wrapper">
+                <!-- Замени src на свою гифку, если хочешь -->
+                <img src="https://media.giphy.com/media/v1.Y2lkY2VzdHJlYW06MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/L1R1TVThqce6c/giphy.gif" alt="Поздравление" class="main-gif">
+            </div>
+            <p class="message">Желаю тебе бесконечного счастья, улыбок и чтобы каждый день был солнечным!</p>
+        </div>
+
+        <!-- Игровая зона -->
+        <section class="game-section">
+            <h2>Мини-игра от Паши: "Собери букет!"</h2>
+            <p>Поймай 20 тюльпанов мышкой или пальцем!</p>
+            <div class="game-container">
+                <canvas id="gameCanvas"></canvas>
+                <div id="scoreBoard">Счет: 0 / 20</div>
+                <button id="startBtn" onclick="startGame()">Начать игру</button>
+            </div>
+        </section>
+
+        <!-- Блок с второй гифкой (скрыт до конца игры) -->
+        <div id="final-gift" class="card hidden">
+            <h2>Ты победила! Вот тебе подарок! 🎁</h2>
+            <div class="gif-wrapper">
+                <img src="https://media.giphy.com/media/3o6Zt6ML6BklcajjsA/giphy.gif" alt="Подарок" class="main-gif">
+            </div>
+            <p class="signature">С любовью, твой сын Паша ❤️</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
